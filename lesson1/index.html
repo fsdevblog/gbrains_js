@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Lesson 1</title>
+</head>
+<body>
+
+<script>
+    /**
+     * Celsius to Fahrenheit converter
+     *
+     * @param c Temp in Celsius
+     * @returns {number}
+     */
+    const cToF = (c) => ((9 / 5) * c + 32);
+
+    const codeStyle = 'font-family: monospace; color: #fe477c; background-color: #fff2f8; padding: 3px';
+
+    /* eslint-disable no-console */
+    console.group('Task #1. Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру в градусах по Фаренгейту. Подсказка: расчёт идёт по формуле: Tf = (9 / 5) * Tc + 32, где Tf – температура по Фаренгейту, Tc – температура по Цельсию');
+    console.log('Используй функцию %ccToF()', codeStyle, ' для конвертации температуры из Цельсия в Фаренгейт');
+    console.log('Например результат выполнения %ccToF(-40)', codeStyle, cToF(-40));
+    console.groupEnd();
+
+    console.group('Task #2. Объявить две переменные: admin и name. Записать в name строку "Василий"; Скопировать значение из name в admin. Вывести admin (должно вывести «Василий»).');
+    const name = 'Василий';
+    const admin = name;
+    console.log('%cadmin ', codeStyle, admin);
+    console.groupEnd();
+
+    console.group('Task #3. Чему будет равно JS-выражение 1000 + "108"/');
+    console.log('Результат - %c%s%c. Когда на любом из слагаемых мест JS видит строку, он приводит все слагаемые в строку в результате чего происходит конкатенация строк', codeStyle, `${1000}108`, '');
+    console.groupEnd();
+
+    console.group('Task #4. Самостоятельно разобраться с атрибутами тега script (async и defer)');
+    const task4Answer = `В ответе не буду углубляться в понятие асинхронности и жизненного цикла загрузки и рендера страницы браузером, перейду сразу к сути.
+Оба атрибута (async и defer) делает загрузку и выполнение скрипта асинхронным с той лишь разницей, что
+defer выполняет скрипты последовательно в порядке вызова их на странице, а async в порядке загрузки. Вторая отличительная особенность defer
+от async в том, что скрипты начнут выполняться только после того, как весь HTML страницы будет загружен
+
+`;
+    console.log(task4Answer);
+    console.groupEnd();
+
+    /* eslint-enable no-console */
+
+</script>
+
+</body>
+</html>
