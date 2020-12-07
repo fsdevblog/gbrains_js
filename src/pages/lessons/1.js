@@ -1,6 +1,5 @@
 import React, { createRef } from 'react';
-import useHighlight from '../../hooks/highlight';
-import { Classes } from '../../prismClasses';
+import HighLight from '../../components/Hightlight';
 
 const cToFResult = createRef();
 
@@ -16,8 +15,6 @@ const handleChangeCtoF = (e) => {
 };
 
 export default function Lesson1() {
-  useHighlight();
-
   return (
     <>
       <h3>
@@ -26,9 +23,9 @@ export default function Lesson1() {
         Вывести соответствующую температуру в градусах по Фаренгейту.
       </h3>
       <pre>
-        <code className={Classes.js}>
+        <HighLight language="js">
           const cToF = (c) => ((9 / 5) * c + 32);
-        </code>
+        </HighLight>
       </pre>
 
       <input type="number" defaultValue={0} onChange={handleChangeCtoF} />
@@ -41,9 +38,9 @@ export default function Lesson1() {
       </h3>
 
       <pre>
-        <code className={Classes.js}>
+        <HighLight>
           { snip2 }
-        </code>
+        </HighLight>
       </pre>
 
       <h3>
@@ -51,9 +48,9 @@ export default function Lesson1() {
       </h3>
 
       <pre>
-        <code className={Classes.js}>
+        <HighLight>
           console.log(1000 + "108") // 1000108
-        </code>
+        </HighLight>
       </pre>
       <p>
         Когда на любом из слагаемых мест JS видит строку,

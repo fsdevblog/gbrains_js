@@ -2,7 +2,6 @@ import React from 'react';
 import { Root, Routes, addPrefetchExcludes } from 'react-static';
 //
 import { Link, Router } from '@reach/router';
-
 import './app.css';
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
@@ -12,7 +11,7 @@ function App() {
   return (
     <Root>
       <nav>
-        <Link to="/">Home</Link>
+        <Link to="/lessons">Уроки</Link>
       </nav>
       <div className="content">
         <React.Suspense fallback={<em>Loading...</em>}>

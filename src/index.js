@@ -17,7 +17,6 @@ if (typeof document !== 'undefined') {
     ? ReactDOM.hydrate
     : ReactDOM.render;
 
-
   const render = (Comp) => {
     renderMethod(
       <AppContainer>
