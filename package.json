@@ -6,9 +6,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "react-static start",
+    "start": "react-static build",
+    "dev": "react-static start",
     "stage": "react-static build --staging",
-    "build": "react-static build",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3030"
   },
