@@ -10,7 +10,7 @@
     "stage": "react-static build --staging",
     "build": "react-static build",
     "analyze": "react-static build --analyze",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 3030"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
@@ -20,11 +20,11 @@
     "react-static": "^7.2.0",
     "react-static-plugin-reach-router": "^7.2.0",
     "react-static-plugin-sitemap": "^7.2.0",
-    "react-static-plugin-source-filesystem": "^7.2.0"
+    "react-static-plugin-source-filesystem": "^7.2.0",
+    "babel-plugin-prismjs": "^2.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
-    "babel-plugin-prismjs": "^2.0.1",
     "eslint": "^7.14.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-react-app": "^5.0.1",
