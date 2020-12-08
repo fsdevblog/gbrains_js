@@ -12,7 +12,7 @@ const WrapTag = ({ as, children, ...rest }) => { // eslint-disable-line react/pr
 };
 
 function HighLight({
-  language, source, children, lineNumbers, inline
+  language, source, children, lineNumbers, inline,
 }) {
   const ref = createRef();
   async function hlight() {
