@@ -1,0 +1,11 @@
+{
+  "presets": ["react-static/babel-preset.js"],
+  "plugins": [
+    ["prismjs", {
+      "languages": ["javascript", "css", "html"],
+      "plugins": ["line-numbers", "show-language"],
+      "theme": "default",
+      "css": true
+    }]
+  ]
+}
