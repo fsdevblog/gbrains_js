@@ -13,6 +13,10 @@ export default function () {
         <li>
           <Link to="/lessons/2">Основные операторы JavaScript</Link>
         </li>
+
+        <li>
+          <Link to="/lessons/3">Циклы, массивы, структуры данных</Link>
+        </li>
       </ul>
     </div>
   );
